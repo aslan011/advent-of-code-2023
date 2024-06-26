@@ -1,6 +1,6 @@
 import re
 
-def openFile(filePath: str):
+def open_file(filePath: str):
     with open(filePath, 'r') as file:
         return file.readlines()
     
@@ -40,7 +40,7 @@ def process(lines: list):
         count += int(map[first] + map[last])
     return count
 
-fileLines = openFile('lines.txt')
+fileLines = open_file('lines.txt')
 
 c = process(fileLines)
 print(c)
